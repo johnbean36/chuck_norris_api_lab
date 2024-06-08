@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #d4edda;
+  margin: 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.chuck {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vmin;
+  align-items: center;
+}
+
+.joke {
+  margin: 5vmin;
+  font-size: 4vmin;
+}
+
+img {
+  display: inline-block;
+  max-height: 30vmin;
+}
+
+.img {
+  margin-top: 3vmin;
+}
+
+p {
+  font-size: 4vmin;
+}
+
+button {
+  height: 4vmin;
+  font-size: 2.5vmin;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  margin: 1vmin;
+}
+
+.cbody {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.selection {
+  display: flex;
+  font-size: 2vmin;
+  margin: 0.5vmin;
+}
+
+.button {
+  margin: 1vmin;
+}
+
+.categorylink {
+  font-size: 3vmin;
+}

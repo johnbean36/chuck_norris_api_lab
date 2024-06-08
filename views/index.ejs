@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class="chuck">
+      <p>Welcome to <%= title %></p>
+      <form action="/jokes" method="GET">
+        <button type="submit">Get Chuck Norris Joke</button>
+      </form>
+      <div class="img">
+        <img src="/images/chuck-norris.jpg">
+      </div>
+      <div class="joke">
+        <% if(typeof(joke)!== 'undefined' && joke){ %>
+          <div><%= joke %></div>
+        <% } %>
+      </div>
+      <div class="categorylink">
+        Choose a category of Chuck Norris jokes <a href="/jokes/category">here</a>
+      </div>
+    </div>
+  </body>
+</html>

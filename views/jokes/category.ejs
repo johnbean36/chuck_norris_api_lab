@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Jokes Category</title>
+</head>
+<body>
+    <div class="cbody">
+        <h1>Choose a Joke category</h1>
+        <a href="/">Home</a>
+        <form action="/jokes/choice" method="POST">
+            <div class="category">
+                <div class="selection">
+                    <div><input type="radio" id="animal" name="category" value="animal"></div>
+                    <div><label for="animal">Animal</label></div>
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="career" name="category" value="career"></div>
+                    <div><label for="career">Career</label></div>
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="celebrity" name="category" value="celebrity"></div>
+                    <div><label for="celebrity">Celebrity</label></div>
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="dev" name="category" value="dev"></div>
+                    <div><label for="dev">Dev</label></div>
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="explicit" name="category" value="explicit"></div>
+                    <div><label for="explicit">Explicit</label></div>
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="fashion" name="category" value="fashion"></div>
+                    <div><label for="fashion">Fashion</label></div>
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="food" name="category" value="food"></div>
+                    <div><label for="food">Food</label></div>
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="history" name="category" value="history"></div>
+                    <div><label for="history">History</label></div>
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="money" name="category" value="money"></div>
+                    <div><label for="money">Money</label></div>
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="movie" name="category" value="movie"></div>
+                    <div><label for="movie">Movie</label></div>
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="music" name="category" value="music"></div>
+                    <div><label for="music">Music</label></div>                
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="political" name="category" value="political"></div>
+                    <div><label for="political">Political</label></div>
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="religion" name="category" value="religion"></div>
+                    <div><label for="religion">Religion</label></div>
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="science" name="category" value="science"></div>
+                    <div><label for="science">Science</label></div>
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="sport" name="category" value="sport"></div>
+                    <div><label for="sport">Sport</label></div>
+                </div>
+                <div class="selection">
+                    <div><input type="radio" id="travel" name="category" value="travel"></div>
+                    <div><label for="travel">Travel</label></div>
+            </div>
+            <div class="button">
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div>
+        <% if(typeof(joke) !== 'undefined' && joke){ %>
+            <div><%= joke %></div>
+        <% } %>
+    </div>
+</body>
+</html>
